@@ -26,7 +26,7 @@ public class BookController {
 	}
 	
 	@GetMapping("/books/{bid}")
-	public Book getABooks(@PathVariable int bid) {
+	public Book getABooks(@PathVariable Integer bid) {
 		return this.bookRepo.findById(bid).get();
 	}
 	
